@@ -1,4 +1,4 @@
-package by.wink.sampleapplication;
+package by.wink.sampleapplication.ui.adapters;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,6 +8,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import by.wink.sampleapplication.R;
+import by.wink.sampleapplication.models.Student;
 
 /**
  * Created by amine on 27/01/17.

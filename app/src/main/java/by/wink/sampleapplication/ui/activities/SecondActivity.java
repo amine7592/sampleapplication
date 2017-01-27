@@ -1,14 +1,17 @@
-package by.wink.sampleapplication;
+package by.wink.sampleapplication.ui.activities;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import by.wink.sampleapplication.R;
+import by.wink.sampleapplication.models.Student;
+import by.wink.sampleapplication.ui.adapters.StudentsAdapter;
 
 public class SecondActivity extends Activity {
 

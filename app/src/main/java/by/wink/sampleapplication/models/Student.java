@@ -1,4 +1,4 @@
-package by.wink.sampleapplication;
+package by.wink.sampleapplication.models;
 
 /**
  * Created by amine on 27/01/17.

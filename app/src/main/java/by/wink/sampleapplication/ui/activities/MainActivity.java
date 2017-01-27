@@ -1,4 +1,4 @@
-package by.wink.sampleapplication;
+package by.wink.sampleapplication.ui.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import by.wink.sampleapplication.R;
 
 /**
  * Created by amine on 25/01/17.
