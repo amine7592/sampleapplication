@@ -24,6 +24,7 @@ public class MainActivity extends Activity {
     EditText changeTextEdit;
     MainActivity activity = this;
     String username;
+    Button showStudentsBtn;
 
     View.OnClickListener changeTxtBtnListener = new View.OnClickListener() {
         @Override
@@ -42,8 +43,16 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         welcomeTv = (TextView) findViewById(R.id.welcome_tv);
         changeTextBtn = (Button) findViewById(R.id.change_text_btn);
+        showStudentsBtn = (Button)findViewById(R.id.show_students_btn);
         changeTextEdit = (EditText)findViewById(R.id.change_text_edit);
         changeTextBtn.setOnClickListener(changeTxtBtnListener);
+        showStudentsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,StudentsListActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

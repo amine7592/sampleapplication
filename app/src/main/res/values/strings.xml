@@ -3,5 +3,6 @@
     <string name="welcome">Benvenuto</string>
     <string name="change_text">Cambia testo</string>
     <string name="change_text_hint">Inserisci testo</string>
+    <string name="show_students">Lista studenti</string>
 
 </resources>
