@@ -16,6 +16,7 @@ public class Student {
 
 
     public Student(){}
+
     public Student(JSONObject studentJson) {
         try {
             nome = studentJson.getString("name");

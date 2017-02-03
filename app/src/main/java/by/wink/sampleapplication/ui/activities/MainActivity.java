@@ -26,6 +26,12 @@ public class MainActivity extends Activity {
     String username;
     Button showStudentsBtn;
 
+
+
+    EditText insertText;
+    TextView messageToShow;
+    Button sendButton;
+
     View.OnClickListener changeTxtBtnListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -41,21 +47,38 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        welcomeTv = (TextView) findViewById(R.id.welcome_tv);
-        changeTextBtn = (Button) findViewById(R.id.change_text_btn);
-        showStudentsBtn = (Button)findViewById(R.id.show_students_btn);
-        changeTextEdit = (EditText)findViewById(R.id.change_text_edit);
-        changeTextBtn.setOnClickListener(changeTxtBtnListener);
-        showStudentsBtn.setOnClickListener(new View.OnClickListener() {
+
+        insertText = (EditText)findViewById(R.id.insert_text);
+        messageToShow = (TextView)findViewById(R.id.message_to_show);
+        sendButton = (Button)findViewById(R.id.show);
+
+        View.OnClickListener viualizza = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,StudentsListActivity.class);
-                startActivity(intent);
+                // textview             edittex
+                messageToShow.setText(insertText.getText());
+
             }
-        });
+        };
+
+        sendButton.setOnClickListener(viualizza);
+
+
+
+//        welcomeTv = (TextView) findViewById(R.id.welcome_tv);
+//        changeTextBtn = (Button) findViewById(R.id.change_text_btn);
+//        showStudentsBtn = (Button)findViewById(R.id.show_students_btn);
+//        changeTextEdit = (EditText)findViewById(R.id.change_text_edit);
+//        changeTextBtn.setOnClickListener(changeTxtBtnListener);
+//        showStudentsBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this,StudentsListActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
     }
 
-
-
+  
 }
